@@ -1,24 +1,4 @@
-#
-# Final Version of the Apache Airflow DAG for Daily Sales Revenue Analysis
-#
-# This DAG now includes a new task to export the final
-# daily revenue table to a CSV file.
-#
-# Prerequisites:
-# - A PostgreSQL database configured in Airflow with the connection ID 'postgres_conn'.
-# - The 'orders', 'order_details', and 'products' tables must be populated.
-# - The following Python packages installed in your Airflow environment:
-#   `pip install apache-airflow-providers-postgres psycopg2-binary pandas matplotlib`
-#
-# To run this DAG:
-# 1. Configure your PostgreSQL connection in the Airflow UI (Admin -> Connections)
-#    - Conn Id: 'postgres_conn'
-#    - Conn Type: 'Postgres'
-#    - Host, Schema, Login, Password, Port: Your PostgreSQL database details.
-# 2. Upload this file to your Airflow DAGs folder.
-# 3. Unpause the DAG in the Airflow UI.
-#
-
+# Libraries
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
