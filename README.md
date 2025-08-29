@@ -35,5 +35,3 @@ The pipeline successfully generates the following outputs, which are available i
 2- daily_revenue_Capstone.csv: A CSV file containing the aggregated daily revenue data.
 
 3- daily_sales_revenue_analysis_v6.py: The complete Airflow DAG script.
-
-## The final analysis confirmed that the total revenue on 1996-08-08 was $200.50.
